@@ -1,29 +1,84 @@
 body {
-  font-family: system-ui, Arial, sans-serif;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  color: #222;
+  background: #f7fafd;
+  color: #1a2233;
 }
 
 nav {
-  background: #222;
+  background: #1a2233;
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 1.5rem 3rem;
   display: flex;
-  gap: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 nav a {
-  color: inherit;
+  color: #fff;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #4fd1c5;
 }
 
 main {
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 2rem;
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2.5rem;
   background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+section.hero {
+  text-align: center;
+  padding: 4rem 2rem 3rem 2rem;
+  background: linear-gradient(90deg, #1a2233 60%, #4fd1c5 100%);
+  color: #fff;
+  border-radius: 0 0 24px 24px;
+  margin-bottom: 2.5rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+.button {
+  display: inline-block;
+  background: #4fd1c5;
+  color: #1a2233;
+  padding: 0.85rem 2.2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.button:hover {
+  background: #38b2ac;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  font-size: 1rem;
+  padding: 2rem 0 1rem 0;
+  margin-top: 3rem;
 }

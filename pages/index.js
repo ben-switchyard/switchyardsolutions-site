@@ -3,19 +3,17 @@ import Layout from '../components/Layout';
 export default function About() {
   return (
     <Layout>
-      <h1>About Switchyard Solutions</h1>
-      <img src="/business-network.svg" alt="Business Network Graphic" style={{maxWidth: '320px', display: 'block', margin: '1.5rem auto'}} />
+      <h2>About Switchyard Solutions</h2>
       <p>
-        Switchyard Solutions provides expert technical consulting for businesses seeking to transform and scale their digital presence.
+        We help organizations harness technology for growth with expertise in software engineering, cloud architecture, and digital strategy.
       </p>
-      <p>
-        With years of experience in software engineering, cloud architecture, and digital strategy, we help organizations harness technology for growth.
-      </p>
-      <img 
-        src="https://placecats.com/400/160" 
-        alt="Playful Cat Graphic" 
-        style={{borderRadius: 12, marginTop: 32, maxWidth: '100%'}}
-      />
+      <img src="/business-network.svg" alt="Business Network Graphic" style={{maxWidth: '320px', display: 'block', margin: '2rem auto'}} />
+      <h3>Why Choose Us?</h3>
+      <ul>
+        <li>Proven track record in digital transformation</li>
+        <li>Tailored solutions for your business</li>
+        <li>Transparent, collaborative approach</li>
+      </ul>
     </Layout>
   );
 }
