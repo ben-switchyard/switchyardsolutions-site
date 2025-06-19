@@ -6,6 +6,22 @@ body {
   color: #1a2233;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('/websitebackground.jpg') center center/cover no-repeat;
+  opacity: 0.10; /* Adjust for subtlety */
+  z-index: 0;
+  pointer-events: none;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  background: none !important; /* Remove any background here */
+}
+
 nav {
   background: #1a2233;
   color: #fff;
@@ -36,6 +52,7 @@ main {
   margin: 3rem auto;
   padding: 2.5rem;
   background: #fff;
+  position: relative;
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.07);
 }
@@ -81,4 +98,246 @@ footer {
   font-size: 1rem;
   padding: 2rem 0 1rem 0;
   margin-top: 3rem;
+}
+
+.service-tabs-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(44, 62, 80, 0.07);
+  margin: 2.5rem auto 2.5rem auto;
+  padding: 0.5rem 0;
+  max-width: 600px;
+}
+
+.service-tab-btn {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: #1a2233;
+  padding: 1rem 2.2rem 0.7rem 2.2rem;
+  border-bottom: 3px solid transparent;
+  border-radius: 12px 12px 0 0;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.service-tab-btn.active,
+.service-tab-btn:hover,
+.service-tab-btn:focus {
+  color: #38b2ac;
+  border-bottom: 3px solid #38b2ac;
+  background: #f7fafc;
+}
+
+.service-tab-content {
+  margin: 2.5rem auto 0 auto;
+  max-width: 700px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(44, 62, 80, 0.07);
+  padding: 2.5rem 2rem;
+  min-height: 180px;
+}
+
+.service-tab-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a2233;
+}
+
+.service-tab-content p {
+  font-size: 1.15rem;
+  color: #2d3748;
+}
+
+.hero-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 3rem 0 2rem 0;
+  flex-wrap: wrap;
+}
+.hero-left {
+  flex: 1 1 340px;
+  min-width: 320px;
+}
+.hero-right {
+  flex: 1 1 340px;
+  display: flex;
+  justify-content: center;
+}
+.hero-right img {
+  max-width: 340px;
+  width: 100%;
+  border-radius: 50%;
+  background: #f7fafc;
+  box-shadow: 0 2px 24px rgba(44, 62, 80, 0.07);
+}
+.hero-home h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a2233;
+}
+.hero-home p {
+  font-size: 1.15rem;
+  margin-bottom: 0.7rem;
+}
+.hero-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+.hero-list li {
+  margin-bottom: 0.3rem;
+  padding-left: 1.5em;
+  position: relative;
+  font-size: 1.08rem;
+}
+.hero-list li::before {
+  content: "✔";
+  color: #38b2ac;
+  position: absolute;
+  left: 0;
+  font-size: 1rem;
+}
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.button {
+  display: inline-block;
+  background: #4fd1c5;
+  color: #1a2233;
+  padding: 0.85rem 2.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  border: none;
+}
+.button:hover {
+  background: #38b2ac;
+  color: #fff;
+}
+.button-outline {
+  background: #fff;
+  color: #38b2ac;
+  border: 2px solid #38b2ac;
+}
+.button-outline:hover {
+  background: #38b2ac;
+  color: #fff;
+}
+
+.overview-label {
+  text-align: center;
+  color: #38b2ac;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.impact-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1a2233;
+}
+.impact-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap; /* Prevent wrapping unless on small screens */
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 1000px) {
+  .impact-cards {
+    flex-wrap: wrap;
+  }
+}
+
+.impact-card {
+  flex: 1 1 300px;
+  max-width: 320px;
+  min-width: 260px;
+  margin-bottom: 0;
+}
+.impact-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(44, 62, 80, 0.07);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  max-width: 320px;
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 260px;
+}
+.impact-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+.impact-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  color: #1a2233;
+}
+.impact-card p {
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+  color: #2d3748;
+}
+.impact-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.impact-card ul li {
+  margin-bottom: 0.3rem;
+  padding-left: 1.3em;
+  position: relative;
+  font-size: 0.98rem;
+}
+.impact-card ul li::before {
+  content: "▸";
+  color: #38b2ac;
+  position: absolute;
+  left: 0;
+  font-size: 1rem;
+}
+.card-link {
+  color: #38b2ac;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: auto;
+  transition: color 0.2s;
+  font-size: 1rem;
+}
+.card-link:hover {
+  color: #1a2233;
+  text-decoration: underline;
+}
+
+.logo-img {
+  height: 36px;
+  margin-right: 24px; /* Adjust as needed */
 }

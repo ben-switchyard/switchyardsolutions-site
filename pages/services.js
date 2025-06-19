@@ -1,28 +1,67 @@
+import { useState } from 'react';
 import Layout from '../components/Layout';
 
-export default function Services() {
-  return (
-    <Layout>
-      <h2>Our Services</h2>
-      <section style={{marginBottom: '2.5rem'}}>
-        <h3>Technical Consulting</h3>
+const services = [
+  {
+    key: 'consulting',
+    label: 'Technical Consulting',
+    content: (
+      <>
+        <h2>Technical Consulting</h2>
         <p>
           We provide expert guidance on software architecture, cloud migration, and digital transformation to help your business thrive.
         </p>
-      </section>
-      <section style={{marginBottom: '2.5rem'}}>
-        <h3>Custom Software Development</h3>
+      </>
+    ),
+  },
+  {
+    key: 'development',
+    label: 'Custom Software Development',
+    content: (
+      <>
+        <h2>Custom Software Development</h2>
         <p>
           From web apps to automation, we build scalable, maintainable solutions tailored to your needs.
         </p>
-      </section>
-      <section>
-        <h3>Cloud & DevOps</h3>
+      </>
+    ),
+  },
+  {
+    key: 'cloud',
+    label: 'Cloud & DevOps',
+    content: (
+      <>
+        <h2>Cloud & DevOps</h2>
         <p>
           Optimize your infrastructure for reliability, security, and cost-effectiveness with our cloud and DevOps expertise.
         </p>
-      </section>
-      <a href="/contact" className="button" style={{marginTop: '2rem', display: 'inline-block'}}>Request a Consultation</a>
+      </>
+    ),
+  },
+];
+
+export default function Services() {
+  const [active, setActive] = useState('consulting');
+
+  return (
+    <Layout>
+      <div className="service-tabs-bar">
+        {services.map((s) => (
+          <button
+            key={s.key}
+            className={`service-tab-btn${active === s.key ? ' active' : ''}`}
+            onMouseEnter={() => setActive(s.key)}
+            onFocus={() => setActive(s.key)}
+            tabIndex={0}
+            type="button"
+          >
+            {s.label}
+          </button>
+        ))}
+      </div>
+      <div className="service-tab-content">
+        {services.find((s) => s.key === active)?.content}
+      </div>
     </Layout>
   );
 }
