@@ -1,0 +1,12 @@
+<svg width="360" height="160" viewBox="0 0 360 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="360" height="160" rx="12" fill="#f3f5fa"/>
+  <g>
+    <rect x="40" y="80" width="30" height="60" rx="4" fill="#4f8cff"/>
+    <rect x="90" y="60" width="30" height="80" rx="4" fill="#8c9eff"/>
+    <rect x="140" y="100" width="30" height="40" rx="4" fill="#b7c9ff"/>
+    <rect x="190" y="40" width="30" height="100" rx="4" fill="#6c63ff"/>
+    <rect x="240" y="70" width="30" height="70" rx="4" fill="#b7c9ff"/>
+    <rect x="290" y="55" width="30" height="85" rx="4" fill="#4f8cff"/>
+  </g>
+  <polyline points="55,110 105,90 155,120 205,60 255,105 305,80" fill="none" stroke="#22223b" stroke-width="2" />
+</svg>

@@ -1,0 +1,16 @@
+{
+  "name": "switchyardsolutions-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Switchyard Solutions public consulting website (About, Services, Contact), built with Next.js.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  }
+}
