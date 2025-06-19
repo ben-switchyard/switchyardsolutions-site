@@ -5,16 +5,16 @@ export default function Home() {
     <Layout>
       <section className="hero-home">
         <div className="hero-left">
-          <h1>Improve Your Information Environment</h1>
+          <h1>Empowering Smarter Business Strategy Through Analytics</h1>
           <p>
-            We enable your team to:
+            Data is only as powerful as the decisions it informs. We help businesses unravel complexity, clarify strategy, and build analytics-driven pathways to success.
           </p>
           <ul className="hero-list">
-            <li>Streamline operations</li>
-            <li>Establish one source of truth</li>
-            <li>Provide actionable reporting</li>
-            <li>Automate workflows</li>
-            <li>Create interactive dashboards</li>
+            <li>Simplify complex projects and processes</li>
+            <li>Align business goals with data-driven insights</li>
+            <li>Build a trusted, unified source of truth</li>
+            <li>Deliver reports that guide decisive action</li>
+            <li>Automate workflows and reporting for efficiency</li>
           </ul>
           <div className="hero-buttons">
             <a href="/services" className="button">About Us</a>
@@ -31,42 +31,42 @@ export default function Home() {
       <div className="impact-cards">
         <div className="impact-card">
           <img src="/Switchyardtransparent.png" alt="Services" className="impact-icon" />
-          <h3>Services</h3>
+          <h3>Business Strategy & Guidance</h3>
           <p>
-            We combine technical expertise and business insight to deliver end-to-end solutions.
+            We work with you to simplify complexity, define clear goals, and set a focused path forward.
           </p>
           <ul>
-            <li>Digital Transformation</li>
-            <li>Advisory Services</li>
-            <li>Reporting Services</li>
+            <li>Project Design</li>
+            <li>Team Alignment</li>
+            <li>Actionable Roadmaps</li>
           </ul>
-          <a href="/services" className="card-link">Explore Services &raquo;</a>
+          <a href="/services#business-strategy" className="card-link">Explore Strategy &raquo;</a>
         </div>
         <div className="impact-card">
           <img src="/Switchyardtransparent.png" alt="Technology" className="impact-icon" />
-          <h3>Technology</h3>
+          <h3>Analytics</h3>
           <p>
-            We offer solutions across multiple platforms and technologies.
+            Turn data into clarity with reliable systems and meaningful measurement.
           </p>
           <ul>
-            <li>On-Premises</li>
-            <li>Cloud</li>
-            <li>Hybrid</li>
+            <li>Scalable Data Platforms</li>
+            <li>Insight Generation</li>
+            <li>Measurement Frameworks</li>
           </ul>
-          <a href="/services" className="card-link">Explore Technology &raquo;</a>
+          <a href="/services#analytics" className="card-link">Explore Analytics &raquo;</a>
         </div>
         <div className="impact-card">
           <img src="/Switchyardtransparent.png" alt="Case Studies" className="impact-icon" />
-          <h3>Case Studies</h3>
+          <h3>Execution</h3>
           <p>
-            See how we’ve helped organizations transform their operations and reporting.
+            Transform plans into results with automation and process optimization.
           </p>
           <ul>
-            <li>Cash Flow Management</li>
-            <li>Margin Management</li>
-            <li>Automated Workflows</li>
+            <li>Workflow Automation</li>
+            <li>Operations and Optimization</li>
+            <li>Process Recovery</li>
           </ul>
-          <a href="/contact" className="card-link">Contact Us &raquo;</a>
+          <a href="/services#execution" className="card-link">Explore Automation &raquo;</a>
         </div>
       </div>
     </Layout>

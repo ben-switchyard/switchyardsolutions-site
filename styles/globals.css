@@ -341,3 +341,83 @@ footer {
   height: 36px;
   margin-right: 24px; /* Adjust as needed */
 }
+
+/* Section Tabs (Strategy, Analytics, Execution) */
+.section-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.section-tab {
+  background: #f5f7fa;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #222;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.section-tab.active,
+.section-tab:hover,
+.section-tab:focus {
+  background: #0ec6d5;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(14,198,213,0.10);
+  outline: none;
+}
+
+/* Category Tabs (sub-tabs) */
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.category-tab {
+  background: #fff;
+  border: 2px solid #e5e7eb;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  cursor: pointer;
+  transition: border 0.2s, color 0.2s, background 0.2s;
+}
+
+.category-tab.active,
+.category-tab:hover,
+.category-tab:focus {
+  border: 2px solid #0ec6d5;
+  color: #0ec6d5;
+  background: #f0fdff;
+  outline: none;
+}
+
+/* Category Content */
+.category-content {
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 2rem 2.5rem;
+  margin: 0 auto 2rem auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .section-tabs, .category-tabs {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .category-content {
+    padding: 1rem;
+  }
+}
