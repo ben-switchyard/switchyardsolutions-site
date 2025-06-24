@@ -3,6 +3,7 @@
 
 # production
 /.next
+/.history
 /out
 
 # misc

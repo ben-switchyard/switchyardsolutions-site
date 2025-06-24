@@ -1,29 +1,42 @@
-import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Layout({ children }) {
+  const [navOpen, setNavOpen] = useState(false);
+
   return (
     <>
-      <nav>
-        <div style={{ flex: 1, display: 'flex', alignItems: 'center' }}>
-          <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-            <img
-              src="/switchyardtransparent.png"
-              alt="Switchyard Solutions Logo"
-              style={{ height: 36, marginRight: 20 }}
-            />
-            <span className="site-title" style={{ fontSize: '1.35rem', fontWeight: 700, color: '#fff', letterSpacing: '0.02em' }}>
-              Switchyard Solutions
-            </span>
-          </Link>
-        </div>
-        <Link href="/">About</Link>
-        <Link href="/services">Services</Link>
-        <Link href="/contact">Contact</Link>
-      </nav>
+      <header className="site-header">
+        <a href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+          <img
+            src="/switchyardtransparent.png"
+            alt="Switchyard Solutions"
+            style={{ height: 36, marginRight: 12 }}
+          />
+          <span style={{
+            color: '#fff',
+            fontWeight: 700,
+            fontSize: '1.25rem',
+            letterSpacing: 0.5,
+          }}>
+            Switchyard Solutions
+          </span>
+        </a>
+        <nav className={`nav-links${navOpen ? ' open' : ''}`}>
+          <a href="/" onClick={() => setNavOpen(false)}>Home</a>
+          <a href="/services" onClick={() => setNavOpen(false)}>Services</a>
+          <a href="/about" onClick={() => setNavOpen(false)}>About Us</a>
+        </nav>
+        <button
+          className="hamburger"
+          aria-label="Open navigation"
+          onClick={() => setNavOpen(!navOpen)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </header>
       <main>{children}</main>
-      <footer>
-        &copy; {new Date().getFullYear()} Switchyard Solutions. All rights reserved.
-      </footer>
     </>
   );
 }
