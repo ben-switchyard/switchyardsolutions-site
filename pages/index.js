@@ -5,17 +5,17 @@ import { useState, useEffect } from 'react';
 const pillars = [
 	{
 		title: 'Strategy',
-		desc: 'Align your business goals with data-driven plans that guide smarter decisions.',
+		desc: 'Practical plans that connect business goals to data actions that guide smarter decisions.',
 		icon: '/switchyardtransparent.png',
 	},
 	{
 		title: 'Analytics',
-		desc: 'Build reliable, scalable systems to turn raw data into clear insights.',
+		desc: 'Reliable, scalable systems that turn messy data into clear, actionable insights.',
 		icon: '/switchyardtransparent.png',
 	},
 	{
 		title: 'Execution',
-		desc: 'Automate and optimize workflows to free your team and boost efficiency.',
+		desc: 'Automation and workflow fixes that free your team to focus on what matters.',
 		icon: '/switchyardtransparent.png',
 	},
 ];
@@ -164,7 +164,8 @@ export default function Home() {
 					textAlign: 'center',
 				}}
 			>
-				Switchyard helps businesses break down barriers between data and action. From uncovering insights to streamlining operations, we simplify complex analytics and build tools that scale with your growth.
+				Switchyard helps businesses break down barriers between data and action. 
+				Cut through noise, deliver clear insights, and build tools that grow with your business. No nonsense, no wasted effort.
 			</motion.p>
 			<div
 				className="hero-buttons"
@@ -216,10 +217,10 @@ export default function Home() {
 						display: 'inline-block',
 					}}
 				>
-					<li>Hands-on partnership from strategy to execution</li>
-					<li>Custom solutions built for your unique challenges</li>
-					<li>Focus on building capabilities, not just reports</li>
-					<li>Clear communication and practical, actionable advice</li>
+					<li>Real partnership. From problem to solution, no handoffs.</li>
+					<li>Solutions built around your exact challenges, not cookie-cutter pre-builts.</li>
+					<li>Focus on building your team’s skills and independence, not just numbers.</li>
+					<li>Straight talk. Clear, actionable, and practical advice.</li>
 				</ul>
 			</motion.section>
 
@@ -251,7 +252,8 @@ export default function Home() {
 					}}
 				/>
 				<p>
-					Ben Schatz is a seasoned analytics leader with a passion for turning complex data into clear business value. He blends technical expertise with hands-on consulting to help organizations move past roadblocks and unlock growth.
+					Ben Schatz is a seasoned analytics leader with a passion for turning complex data into clear business value. 
+					Blending deep analytics experience with practical consulting to get teams unstuck and results in action.
 				</p>
 				<blockquote style={{
 					fontStyle: 'italic',
@@ -264,7 +266,7 @@ export default function Home() {
 					fontSize: '1.08rem',
 					maxWidth: 500
 				}}>
-					“The greatest value often comes from leveraging the assets you already have.”
+					“Keep it simple: use what you have, know what matters, get things moving, and keep iterating.”
 				</blockquote>
 			</motion.section>
 		</Layout>

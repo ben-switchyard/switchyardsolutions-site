@@ -1,47 +1,47 @@
 const services = [
   {
     title: 'Project Design',
-    desc: `Projects get messy fast when the plan doesn’t match reality. We cut through the noise with clear, practical project designs that lay out scope, call out risks early, and bring the right people in at the right time. That way, you’re set up to move forward without surprises.`,
+    desc: `Projects get messy fast when the plan doesn’t match reality. We focus on clear, practical designs that define scope, flag risks early, and bring the right people together at the right time. This keeps things moving without surprises.`,
     icon: '/switchyardtransparent.png',
   },
   {
     title: 'Team Alignment',
-    desc: `Nothing kills progress like teams pulling in different directions. Bringing all key players onto the same page establishes shared goals and clear communication. When people know what’s expected and why, momentum builds naturally.`,
+    desc: `Nothing kills progress like teams pulling in different directions. We get everyone on the same page with shared goals and clear communication. When expectations are clear and understood, momentum builds naturally.`,
     icon: '/switchyardtransparent.png',
   },
   {
     title: 'Actionable Roadmaps',
-    desc: `Big-picture goals need real-world plans. We break strategy into bite-sized, prioritized steps that make tracking progress simple and keep resources focused. It is about having a roadmap that is flexible enough to handle change but solid enough to get things done.`,
+    desc: `Big goals need real plans. We break strategy into clear, prioritized steps that make tracking progress simple and keep focus where it counts. The roadmap stays flexible enough for change but solid enough to get stuff done.`,
     icon: '/switchyardtransparent.png',
   },
   {
     title: 'Scalable Data Platforms',
-    desc: `Your data platform should grow with you, not hold you back. Building solid, scalable setups keeps your data clean, accessible, and fast no matter how much you throw at it. Reliable data means confident decisions and less firefighting.`,
+    desc: `Your data platform should grow with you, not hold you back. We build solid, scalable systems that keep your data clean, fast, and accessible no matter the load. Reliable data means confident decisions and less firefighting.`,
     icon: '/switchyardtransparent.png',
   },
   {
     title: 'Insight Generation',
-    desc: `Data is useless if it does not lead somewhere. We dig into the numbers, find the root causes, and tell the story that matters. The goal is insights that help you make smarter choices and spot opportunities before they are obvious.`,
+    desc: `Data without a story is noise. We dig deep to find root causes and deliver insights that help you make smarter moves and spot opportunities before they’re obvious.`,
     icon: '/switchyardtransparent.png',
   },
   {
     title: 'Measurement Frameworks',
-    desc: `If you cannot measure it, you cannot improve it. We set up frameworks that make it easy to know what is working so you can double down on success and course-correct when needed. Learning fast keeps you ahead.`,
+    desc: `If you can’t measure it, you can’t improve it. We set up frameworks that make it easy to see what’s working so you can double down on wins and course-correct fast. Moving quickly keeps you ahead.`,
     icon: '/switchyardtransparent.png',
   },
   {
     title: 'Workflow Automation',
-    desc: `Manual work slows everyone down and invites mistakes. Automating data pipelines and reporting frees your team to focus on what really matters: analysis, strategy, and growth. Automation is the backbone of speed and reliability.`,
+    desc: `Manual work slows everything down and invites mistakes. We automate data pipelines and reporting so your team can focus on what really matters. Automation is the backbone of speed and reliability.`,
     icon: '/switchyardtransparent.png',
   },
   {
     title: 'Operations and Optimization',
-    desc: `Operations problems do not always scream for attention but quietly sap efficiency. Using data to find bottlenecks and fix what is broken cuts costs, improves processes, and makes your operation smoother and more scalable.`,
+    desc: `Operations issues don’t always shout but quietly drag you down. We use data to find bottlenecks and fix what’s broken, cutting costs and making operations smoother and ready to scale.`,
     icon: '/switchyardtransparent.png',
   },
   {
     title: 'Process Recovery',
-    desc: `Sometimes projects hit walls or fall apart. When that happens, you need a clear-eyed reset. We get to the bottom of what is going wrong, realign stakeholders, and implement fixes that get things back on track. No drama, just results.`,
+    desc: `Projects sometimes hit walls or fall apart. When that happens, we step in to find root problems, realign stakeholders, and implement fixes that get things back on track. No drama, just results.`,
     icon: '/switchyardtransparent.png',
   },
 ];
