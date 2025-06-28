@@ -53,9 +53,9 @@ export default function About() {
           “Pretty pictures and fancy numbers can only get you so far. Real change requires understanding of the why, when and how”
         </blockquote>
         <p style={{ fontSize: '1.13rem', marginBottom: 18 }}>
-          At Switchyard Solutions, data isn’t just numbers. It’s the key to making smarter decisions that last. 
-          Founded by Benjamin Schatz, a seasoned analytics leader with over a decade of experience guiding organizations 
-          through complexity, Switchyard is built around one simple idea: making data work for you.
+          Switchyard Solutions is built on one simple idea: making data work for you. 
+          We don’t just deliver numbers. We think like operators and leaders, focused on solving real 
+          problems and building sustainable systems that help your business actually use data to drive decisions.
         </p>
         <p style={{ fontSize: '1.13rem', marginBottom: 18 }}>
           Ben’s background spans leading analytics teams at startups and tech giants alike, driving strategic 
@@ -69,8 +69,8 @@ export default function About() {
           shaping a growth roadmap, the goal is simple: turn analytics into an advantage that’s practical, scalable, and easy to own.
         </p>
         <p style={{ fontSize: '1.13rem', marginBottom: 0 }}>
-          HYou won’t get a one-size-fits-all solution. Instead, you get a trusted partner who understands 
-          the challenges of modern business and helps you move forward with confidence.
+          We partner closely with your team to unlock insights that fuel growth, reduce costs, and keep operations running smoothly.
+          No copy-paste solutions here, just practical tools that fit your business and your people.
         </p>
       </motion.section>
     </Layout>

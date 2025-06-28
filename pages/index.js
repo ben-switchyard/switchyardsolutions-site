@@ -188,7 +188,6 @@ export default function Home() {
 
 			{/* PILLARS - NO OUTER BOX */}
 			<PillarsRow pillars={pillars} />
-
 			{/* WHY WORK WITH US */}
 			<motion.section
 				initial={{ opacity: 0, y: 0 }}
@@ -223,7 +222,31 @@ export default function Home() {
 					<li>Straight talk. Clear, actionable, and practical advice.</li>
 				</ul>
 			</motion.section>
-
+<motion.section
+			initial={{ opacity: 0, y: 30 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			viewport={{ once: true }}
+			transition={{ delay: 0.2, duration: 0.7 }}
+			style={{
+				maxWidth: 900,
+				margin: '3rem auto 3rem auto',
+				padding: '2rem 1.5rem',
+				background: '#f7fafc',
+				borderRadius: '1.25rem',
+				boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
+				textAlign: 'center',
+				fontSize: '1.25rem',
+				color: '#2d3748',
+				fontStyle: 'italic',
+				lineHeight: 1.6,
+				fontWeight: 400,
+			}}
+			>
+			Data tells a story.<br />
+			It reveals risks avoided, hidden opportunities, and paths yet to be taken.<br />
+			It surfaces patterns lost in the noise and moments ready to be seized.<br />
+			Are you ready to find those insights and make your move?
+			</motion.section>
 			{/* ABOUT */}
 			<motion.section
 				initial={{ opacity: 0, y: 40 }}
@@ -236,7 +259,8 @@ export default function Home() {
 					textAlign: 'center',
 				}}
 			>
-				<h2>About</h2>
+			
+				<h2></h2>
 				<img
 					src="/benheadshot.jpg"
 					alt="Benjamin Schatz"
