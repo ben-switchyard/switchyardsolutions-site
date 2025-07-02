@@ -5,17 +5,17 @@ import { useState, useEffect } from 'react';
 const pillars = [
 	{
 		title: 'Strategy',
-		desc: 'Practical plans that connect business goals to data actions that guide smarter decisions.',
+		desc: 'Practical plans that connects your business goals to your data, so every decision is smarter than the last.',
 		icon: '/switchyardtransparent.png',
 	},
 	{
 		title: 'Analytics',
-		desc: 'Reliable, scalable systems that turn messy data into clear, actionable insights.',
+		desc: 'Reliable, scalable systems designed to turn messy data into a clear source of truth you can act on.',
 		icon: '/switchyardtransparent.png',
 	},
 	{
 		title: 'Execution',
-		desc: 'Automation and workflow fixes that free your team to focus on what matters.',
+		desc: 'Targeted automation and workflow improvements that free up your team to focus on the high-value work.',
 		icon: '/switchyardtransparent.png',
 	},
 ];
@@ -151,7 +151,7 @@ export default function Home() {
 					textAlign: 'center',
 				}}
 			>
-				Empowering Smarter Business Strategy Through Analytics
+				Smarter Business Strategy Through Analytics
 			</motion.h1>
 			<motion.p
 				initial={{ opacity: 0 }}
@@ -216,10 +216,10 @@ export default function Home() {
 						display: 'inline-block',
 					}}
 				>
-					<li>Real partnership. From problem to solution, no handoffs.</li>
+					<li>Real partnership. From problem to solution, no confusion or handoffs.</li>
 					<li>Solutions built around your exact challenges, not cookie-cutter pre-builts.</li>
-					<li>Focus on building your team’s skills and independence, not just numbers.</li>
-					<li>Straight talk. Clear, actionable, and practical advice.</li>
+					<li>Build your team's skills and independence for future growth.</li>
+					<li>Straight guidance. Clear, actionable, and practical advice.</li>
 				</ul>
 			</motion.section>
 <motion.section
@@ -261,23 +261,29 @@ export default function Home() {
 			>
 			
 				<h2></h2>
-				<img
-					src="/benheadshot.jpg"
-					alt="Benjamin Schatz"
-					style={{
-						width: 120,
-						height: 120,
-						borderRadius: '50%',
-						objectFit: 'cover',
-						margin: '0 auto 1rem auto',
-						boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
-						border: '2px solid #e6fffa',
-						background: '#f7fafc',
-					}}
-				/>
+				<a
+  href="mailto:ben@switchyardsolutions.com"
+  aria-label="Email Ben Schatz"
+  style={{ display: 'inline-block' }}
+>
+  <img
+    src="/benheadshot.jpg"
+    alt="Benjamin Schatz"
+    style={{
+      width: 120,
+      height: 120,
+      borderRadius: '50%',
+      objectFit: 'cover',
+      margin: '0 auto 1rem auto',
+      boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
+      border: '2px solid #e6fffa',
+      background: '#f7fafc',
+    }}
+  />
+</a>
 				<p>
-					Ben Schatz is a seasoned analytics leader with a passion for turning complex data into clear business value. 
-					Blending deep analytics experience with practical consulting to get teams unstuck and results in action.
+					Ben Schatz is a seasoned analytics leader with a passion for turning complex data into direct business value. 
+					Blending deep analytics experience with practical consulting to get teams unstuck and results into action.
 				</p>
 				<blockquote style={{
 					fontStyle: 'italic',

@@ -1,6 +1,6 @@
 # switchyardsolutions-site
 
-This is the public website for Switchyard Solutions, built with Nest.js.  
+This is the public website for Switchyard Solutions, built with Nest.js.
 It includes standard consulting pages: About, Services, and Contact.
 
 ## Running Locally
@@ -12,9 +12,9 @@ npm run dev
 
 ## Project Structure
 
-- `/pages` — Main site routes (About, Services, Contact)
-- `/public` — Static assets
-- `/components` — Reusable UI components
+- `/pages`  Main site routes (About, Services, Contact)
+- `/public`  Static assets
+- `/components`  Reusable UI components
 
 ## License
 

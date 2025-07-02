@@ -217,7 +217,7 @@ function CaseStudiesTabs({ studies }) {
 					className="case-tabs-details"
 					initial={{ opacity: 0, y: 10 }}
 					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.35 }}
+					transition={{ duration: 0.55 }}
 				>
 					<div>{studies[selected].challenge}</div>
 					<div>{studies[selected].approach}</div>
@@ -249,8 +249,8 @@ export default function Services() {
 					textAlign: 'center',
 				}}
 			>
-				We help organizations move from uncertainty to clarity—designing practical strategies,
-				building robust analytics, and delivering real business results. Here’s how we can help:
+				We help organizations move from uncertainty to clarity by defining clear strategies,
+				building robust analytics, and delivering real business results. Here's how we can help:
 			</motion.p>
 			{/* Services */}
 			<ResponsiveAccordion services={services} />
