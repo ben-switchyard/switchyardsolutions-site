@@ -24,6 +24,7 @@ export default function Layout({ children }) {
         <nav className={`nav-links${navOpen ? ' open' : ''}`}>
           <a href="/" onClick={() => setNavOpen(false)}>Home</a>
           <a href="/services" onClick={() => setNavOpen(false)}>Services</a>
+          <a href="/tools" onClick={() => setNavOpen(false)}>Tools</a>
           <a href="/about" onClick={() => setNavOpen(false)}>About Us</a>
           <a
             href="mailto:ben@switchyardsolutions.com"
