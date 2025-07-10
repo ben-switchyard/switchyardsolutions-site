@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Layout from '../components/Layout';
 import { motion } from 'framer-motion';
 
@@ -6,40 +7,55 @@ const tools = [
 		name: 'Google Cloud Platform',
 		logo: '/logos/googlecloud.svg',
 		url: 'https://cloud.google.com/',
+		desc: 'Cloud infrastructure for scalable analytics and apps.',
 	},
 	{
 		name: 'BigQuery',
 		logo: '/logos/googlebigquery.svg',
 		url: 'https://cloud.google.com/bigquery',
+		desc: 'Cost-effective cloud data warehouse.',
 	},
     {
 		name: 'Databricks',
 		logo: '/logos/databricks.svg',
 		url: 'https://databricks.com/',
+		desc: 'Unified analytics platform analytics and AI workloads.',
 	},
 	{
 		name: 'dbt',
 		logo: '/logos/dbt.svg',
 		url: 'https://www.getdbt.com/',
+		desc: 'Data warehousing and analytics engineering tool.',
 	},
 	{
 		name: 'Looker',
 		logo: '/logos/looker.svg',
 		url: 'https://looker.com/',
+		desc: 'Sleek BI and Visualization platform for data exploration.',
 	},
 	{
 		name: 'Power BI',
 		logo: '/logos/powerbi.svg',
 		url: 'https://powerbi.microsoft.com/',
+		desc: 'Powerhouse of business analytics and visualization.',
 	},
 	{
 		name: 'Tableau',
 		logo: '/logos/tableau.svg',
 		url: 'https://www.tableau.com/',
+		desc: 'Polished and powerful data visualization tool.',
+	},
+	{
+		name: 'Zapier',
+		logo: '/logos/zapier.svg',
+		url: 'https://www.zapier.com/',
+		desc: 'Multi-service automation platform.',
 	},
 ];
 
 export default function Tools() {
+	const [hovered, setHovered] = useState(null);
+
 	return (
 		<Layout>
 			<motion.section
@@ -71,7 +87,7 @@ export default function Tools() {
 						maxWidth: 900,
 					}}
 				>
-					{tools.map((tool) => (
+					{tools.map((tool, idx) => (
 						<a
 							key={tool.name}
 							href={tool.url}
@@ -84,36 +100,50 @@ export default function Tools() {
 								background: '#f7fafc',
 								borderRadius: 16,
 								boxShadow: '0 2px 12px rgba(44,62,80,0.07)',
-								padding: '2rem 1rem .7rem 1rem',
+								padding: '1.1rem 0.5rem 0.7rem 0.5rem',
 								textDecoration: 'none',
 								color: '#222',
 								opacity: 0.95,
-                                minHeight: 100,
+                                minHeight: 140,
 								transition: 'opacity 0.2s, box-shadow 0.2s',
+								position: 'relative',
 							}}
-							onMouseOver={e => {
-								e.currentTarget.style.opacity = 1;
-								e.currentTarget.style.boxShadow = '0 4px 24px rgba(44,62,80,0.13)';
-							}}
-							onMouseOut={e => {
-								e.currentTarget.style.opacity = 0.95;
-								e.currentTarget.style.boxShadow = '0 2px 12px rgba(44,62,80,0.07)';
-							}}
+							onMouseEnter={() => setHovered(idx)}
+							onMouseLeave={() => setHovered(null)}
 						>
-							<img
-								src={tool.logo}
-								alt={tool.name + ' logo'}
-								style={{
-									height: 60,
-									width: 180,
-									marginBottom: 0,
-									objectFit: 'contain',
-									borderRadius: 10,
-									padding: 0,
-									boxShadow: '0 1px 4px rgba(44,62,80,0.04)',
-								}}
-							/>
-							<span style={{ fontWeight: 300, fontSize: '0.85rem', marginTop: 2, textAlign: 'center' }}>
+							<div style={{ minHeight: 72, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+								{hovered !== idx ? (
+									<img
+										src={tool.logo}
+										alt={tool.name + ' logo'}
+										style={{
+											height: 60,
+											width: 120,
+											objectFit: 'contain',
+											borderRadius: 10,
+											padding: 0,
+											boxShadow: '0 1px 4px rgba(44,62,80,0.04)',
+											transition: 'opacity 0.2s',
+										}}
+									/>
+								) : (
+									<span
+										style={{
+											fontSize: '0.93rem',
+											color: '#319795',
+											margin: '0.5rem 0 0 0',
+											minHeight: 60,
+											display: 'block',
+											textAlign: 'center',
+											fontWeight: 400,
+											lineHeight: 1.3,
+										}}
+									>
+										{tool.desc}
+									</span>
+								)}
+							</div>
+							<span style={{ fontWeight: 500, fontSize: '0.85rem', marginTop: 8, textAlign: 'center' }}>
 								{tool.name}
 							</span>
 						</a>
@@ -123,8 +153,26 @@ export default function Tools() {
 					We have more in our toolbox but selecting the right tool is a complex decision. 
 				</p>
 				<p style={{ color: '#319795', fontSize: '1.08rem', marginTop: 12 }}>
-					Reach out and we can discuss your ecosystem and their pros/conssni. 
+					Not sure which tools fit your needs? Reach out and we’ll help you design the right ecosystem for your business.
 				</p>
+				<a
+					href="mailto:ben@switchyardsolutions.com"
+					style={{
+						display: 'inline-block',
+						marginTop: 24,
+						padding: '0.75rem 2rem',
+						background: '#4fd1c5',
+						color: '#fff',
+						borderRadius: 8,
+						fontWeight: 600,
+						fontSize: '1.08rem',
+						textDecoration: 'none',
+						boxShadow: '0 2px 8px rgba(44,62,80,0.07)',
+						transition: 'background 0.2s, color 0.2s',
+					}}
+				>
+					Contact Us
+				</a>
 			</motion.section>
 		</Layout>
 	);
