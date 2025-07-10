@@ -60,7 +60,7 @@ export default function Tools() {
 					Tools & Technology
 				</h1>
 				<p style={{ fontSize: '1.18rem', color: '#2d3748', marginBottom: 32 }}>
-					We build with the best tool for the job. <br></br>Factoring in cost, simplicity and accessibility we built a tooling system just for you.
+					We build with the best tool for the job. <br></br>Factoring in cost, features and accessibility we build a tooling system just for you.
 				</p>
 				<div
 					style={{
